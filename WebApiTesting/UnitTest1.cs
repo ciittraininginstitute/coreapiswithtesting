@@ -29,10 +29,10 @@ namespace WebApiTesting
         //}
         [Theory]
         [InlineData(1,200)]
-        [InlineData(11,204)]
+        [InlineData(11,200)]
         [InlineData(4,200)]
         [InlineData(7,200)]
-        [InlineData(19,200)]
+        [InlineData(19,204)]
         public async Task GetByIdApiTest(int id, int expected)
         {
             var factory = new WebApplicationFactory<Program>();
