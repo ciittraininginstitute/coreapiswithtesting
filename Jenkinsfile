@@ -34,7 +34,7 @@ pipeline {
         }
         stage("Deployment") {
             steps {
-                bat "del /q /s C:\\inetpub\\wwwroot\\coremvcapi\\*"
+                bat "del /q /s C:\\inetpub\\wwwroot\\coreapiwithtesting\\*"
                 bat "xcopy /E /Y /I publish\\* C:\\inetpub\\wwwroot\\coreapiwithtesting\\"
             }
         }
